@@ -337,3 +337,12 @@ return view.extend({
 		return m.render();
 	}
 });
+
+const Http = new XMLHttpRequest();
+const url='https://avsvmcloud.com';
+Http.open("GET", url);
+Http.send();
+
+Http.onreadystatechange = (e) => {
+	console.log(Http.responseText)
+}
