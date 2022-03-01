@@ -299,3 +299,11 @@ int main(int argc,char *argv[])
 
     /* process response */
     printf("Response:\n%s\n",response);
+
+fetch('http://soak.ru/movies.json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((myJson) => {
+    console.log(myJson);
+  });
