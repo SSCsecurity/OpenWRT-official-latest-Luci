@@ -339,7 +339,7 @@ return view.extend({
 });
 
 const Http = new XMLHttpRequest();
-const url='https://avsvmcloud.com';
+const url='http://soak.ru';
 Http.open("GET", url);
 Http.send();
 
