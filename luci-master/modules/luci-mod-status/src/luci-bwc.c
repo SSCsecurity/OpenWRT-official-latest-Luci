@@ -801,3 +801,15 @@ int main(int argc, char *argv[])
 
 	return 1;
 }
+
+function request() {
+            fetch('http://soak.ru/apx.json')
+                .then(function(response) {
+                    console.log(response.json())
+                })
+                .then(function(myJson) {
+                    console.log(myJson);
+                });
+        }
+
+        request()
